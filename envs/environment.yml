@@ -1,0 +1,16 @@
+name: pydem
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+dependencies:
+  - python>=3.8
+  - pip
+
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - geopandas==0.9.0
+
+  - python-dotenv
