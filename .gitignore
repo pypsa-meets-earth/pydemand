@@ -1,2 +1,4 @@
 .env
 temp/
+__pycache__
+data/

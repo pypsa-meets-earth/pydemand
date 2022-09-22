@@ -26,6 +26,7 @@ def download_and_read(alpha_2):
     
     filename = '{}_2020.csv'.format(alpha_2)
 
+    logging.info(f'Retrieving {filename}.')
     wget.download(DOWNLOAD_BASE.format(alpha_2), os.path.join(TEMP_PATH, filename))
     df = pd.read_csv(os.path.join(TEMP_PATH, filename), index_col=0, parse_dates=True)
 
