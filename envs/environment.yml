@@ -10,7 +10,6 @@ dependencies:
   - numpy
   - pandas
   - matplotlib
-  - scikit-learn
-  - geopandas==0.9.0
 
-  - python-dotenv
+  - pycountry
+  - wget

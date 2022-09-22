@@ -1,0 +1,1 @@
+DOWNLOAD_BASE = 'https://pydem.s3.eu-central-1.amazonaws.com/{}_2020.csv'
