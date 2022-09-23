@@ -1,8 +1,8 @@
 =====
-Pydem
+Pydemand
 =====
 
-Pydem is a energy demand estimation Python library.
+Pydemand is a energy demand estimation Python library.
 
 Right now, it is in an infant state, only retrieving country-scale electricity
 demand data estimated for 2020 in `Long term load projection in high resolution for all countries globally`_.
@@ -20,7 +20,7 @@ The library can be install via ``pip`` from `pypi`
 
 .. code:: shell
 
-    pip install pydem
+    pip install pydemand
 
 
 =====

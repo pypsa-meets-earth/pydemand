@@ -7,7 +7,7 @@ import pycountry
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
-from config import DOWNLOAD_BASE
+from .config import DOWNLOAD_BASE
 
 TEMP_PATH = os.path.join(os.getcwd(), 'temp')
 os.makedirs(TEMP_PATH, exist_ok=True)
