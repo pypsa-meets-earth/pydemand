@@ -1,4 +1,4 @@
-name: pydem
+name: pydemand
 channels:
   - conda-forge
   - defaults

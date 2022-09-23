@@ -18,7 +18,7 @@ LONG_DESCRIPTION = ('This is a work in progress. For now, the package offers' +
 
 # Setting up
 setup(
-    name="pydem",
+    name="pydemand",
     version=VERSION,
     author="Lukas Franken",
     author_email="<lukas.franken@ed.ac.uk>",
