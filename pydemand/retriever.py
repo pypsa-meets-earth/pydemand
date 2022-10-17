@@ -19,11 +19,11 @@ def download_and_read(alpha_2):
 
     Args:
         alpha_2(float): CC code for country of interest
-    
+
     Returns:
         pd.DataFrame with single column of respective country demand
-    ''' 
-    
+    '''
+
     filename = '{}_2020.csv'.format(alpha_2)
 
     logging.info(f'Retrieving {filename}.')
@@ -36,9 +36,9 @@ def download_and_read(alpha_2):
 
 def get(countries=None,
         country=None,
-        *, 
-        carrier=None, 
-        start=None, 
+        *,
+        carrier=None,
+        start=None,
         end=None,
         ):
     '''
@@ -70,9 +70,9 @@ def get(countries=None,
                  str(countries).replace('[', '').replace(']', '') + '.')
 
     dummy = download_and_read('AE')
-    start = start or dummy.index[0]    
-    end = end or dummy.index[-1]    
-    
+    start = start or dummy.index[0]
+    end = end or dummy.index[-1]
+
     index = pd.date_range(start, end, freq='h')
 
     assert index[0] >= dummy.index[0], 'Chosen start timestamp is not in 2020'
@@ -93,5 +93,5 @@ def get(countries=None,
     return demand
 
 if __name__ == '__main__':
-    
+
     print(get(['Germany', 'albania'], start='2020-04-01', end='2020-05-01'))
